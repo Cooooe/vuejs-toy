@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        {{message}}
+    </div>
+
+    <div id="app2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+        </span>
+    </div>
+
+    <div id="app3">
+        {{message}}
+        <input type="text" v-model="message">
+    </div>
+</body>
+<script src="../js/libs.js"></script>
+<script src="../js/dist.js"></script>
+</html>
